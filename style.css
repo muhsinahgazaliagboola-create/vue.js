@@ -19,6 +19,8 @@ header{
     top: 0;
     z-index: 1;
     background-color: rgb(26, 26, 26);
+    cursor: pointer;
+    /* filter: grayscale(100%); */
 
 }
 div{
@@ -26,6 +28,7 @@ div{
     margin-right: 20px;
     gap: 10px;
 }
+
 .vue{
     color: rgb(151, 151, 144);
     font-family:  "Roboto", sans-serif;
@@ -34,10 +37,21 @@ span{
     display: flex;
     gap: 10px;
 }
+kbd{
+    color: green;
+    margin-left: 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    filter: grayscale(100%);
+}
+kbd:hover{
+    filter: grayscale(0);
+    
+}
 ul{
     list-style-type: none;
     display: flex;
-    gap: 10px;
+    gap: 30px;
     color: white;
     font-family:  "Roboto", sans-serif;
 
@@ -46,8 +60,9 @@ ul{
     font-size: 10px;
 }
 .head{
-    margin-left: 500px;
+    margin-left: 350px;
 }
+
 .chinko{
     color: white;
     gap: 20px;
@@ -94,6 +109,7 @@ h1{
     height: 45px;
     /* align-items: center; */
     border-radius: 12px;
+    cursor: pointer;
 }.btn1{
     width: 10%;
     background-color: rgb(66, 184, 131);
@@ -115,7 +131,11 @@ h1{
     line-height: 24px;
     color: rgb(170, 200, 228);
     background-color: rgb(47, 47, 47);
+    /* cursor: pointer; */
 
+}
+.btn2:hover{
+    filter: blur(70%);
 }
 .btn3{
     width: 8%;
@@ -193,9 +213,14 @@ h1{
     font-weight: 400;
     
 }
-.foutrh{
+.fourth{
     filter: grayscale(100%);
+    /* color: transparent; */
 }
+.fourth:hover{
+    filter: grayscale(0);
+}
+
 .third{
     display: flex;
 }
@@ -207,7 +232,9 @@ h1{
     gap: 5px;
     margin: 20px auto;  
     z-index: 0;  
-}
+    
+}  
+
 .box{
     width: 100%;
     height: 100px;
@@ -262,98 +289,14 @@ h1{
     z-index: 0;
 
 }
-footer{
-    width: 100%;
-    /* border: 1px solid red; */
-    background-color: rgb(36, 36, 36);
-    margin-top: 100px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    min-height: 300px;
+* {
+    box-sizing: border-box;
 }
-.footer-li{
-    text-decoration: none;
-    list-style-type: none;
-    color: rgb(172, 172, 172);
-    background-color: transparent;
-}
-.footer-div{
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
-    background-color: transparent;
-    line-height: 15px;
-}
-.footer-h4{
-    color: white;
-    background-color: transparent;
-}
-.container4{
-    width: 70%;
-    min-height: 500px;
-    display: flex;
-    /* border: 1px solid green; */
-    margin: 20px auto;
-    background-color: transparent;
-}
-.first{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    background-color: transparent;
-}
-.div2{
-    margin-top: 20px;
-}
-.div4{
-    margin-top: 20px;
-}
-.div5{
-    margin-top: 20px;
-}
-.div7{
-    margin-top: 20px;
-}
-.div8{
-    margin-top: 20px;
-}
-.foot{
-    background-color: transparent;
-}
-.bi-arrow-up-right{
-    background-color: transparent;
-}
-.container5{
-    border: 1px solid white;
-    width: 100%;
-    min-height: 200px;
-}
-@media screen and (max-width:900px) {
-    .replacement{
-        display: none;
-    }
-    .head{
-        margin-left: 150px;
 
-    }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
-@media screen and (max-width:500px) {
-    .menu{
-        display: block;
-        margin-right:10px;
-        /* height: 50px; */
-    }
-    .head{
-        display: none;
 
-    }
-     .replacement{
-        display: none;
-    }
-    .chinko{
-        margin-left: 70px;
-    }
-    .men{
-        height: 40px;
-    }
-}
+
+
